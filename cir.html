@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before {
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    content: '';
+    background-image: url(images/bg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    pointer-events: none;
+}
+    </style>
+    <link rel="stylesheet" href="cir.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/naruto 1.jpeg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/naruto 2.jpeg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/naruto 3.jpeg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/naruto 4.jpeg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/naruto 5.jpeg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/naruto6.jpeg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/naruto7.jpeg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/naruto 8.jpeg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/naruto 9.jpeg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/naruto 10.jpeg" alt=""></div>
+        </div>
+</body>
+</html>
